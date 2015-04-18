@@ -30,7 +30,7 @@ class SoundfontsViewController: UIViewController, UITextFieldDelegate, UIPickerV
     var currentSoundfont = 4
     var currentOctave = 5
     
-    let soundfonts = ["analog_age", "banjo_1", "beautiful_pad", "bolivianflute", "church_organ", "janos_lead", "DCs_Mellotron_Flute", "jonnypad5", "jonnypad7", "jonnypad8", "LesPaul", "piano_1", "StomperSet"]
+    let soundfonts = ["analog_age", "banjo_1", "beautiful_pad", "bolivianflute", "Campbells_strings", "Campbells_Verby_Vocal", "church_organ", "das_moog", "DCs_Mellotron_Flute", "ElPiano1", "enigma_flute", "flugelhorn", "janos_lead", "jonnypad1", "jonnypad3", "jonnypad4", "jonnypad5", "jonnypad6", "jonnypad7", "jonnypad8", "LesPaul", "piano_1", "muted_trombone", "saz", "SC88Drumset", "StomperSet"]
     
     var soundfontsData: [String: SfData]
     
@@ -61,7 +61,7 @@ class SoundfontsViewController: UIViewController, UITextFieldDelegate, UIPickerV
         // Chorus can be weird but it does work - the units seem to be pretty arbitrary though. You're probably better off using a chorus patch.
         // Reverb only works with the default settings - try to change any of it and it breaks.  I used a reverb patch instead.
         // This will print an error message saying "speed is too low". Don't worry about it - the error message is wrong. Gotta love working with 15 year-old libraries.
-        sendString("chorus_speed .5", toReceiver: soundfontsReceiver)
+        sendString("chorus_speed 1", toReceiver: soundfontsReceiver)
         sendString("chorus_depth 8", toReceiver: soundfontsReceiver)
         sendString("chorus_level 9", toReceiver: soundfontsReceiver)
         sendString("chorus_n 3", toReceiver: soundfontsReceiver)
