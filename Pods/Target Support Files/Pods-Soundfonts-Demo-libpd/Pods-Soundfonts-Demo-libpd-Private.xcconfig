@@ -1,0 +1,6 @@
+#include "Pods-Soundfonts-Demo-libpd.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/libpd" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/libpd"
+OTHER_LDFLAGS = ${PODS_SOUNDFONTS_DEMO_LIBPD_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

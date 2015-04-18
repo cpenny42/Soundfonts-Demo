@@ -1,0 +1,9 @@
+#N canvas 486 291 450 300 10;
+#X text 12 6 [counter2] - simple counter;
+#X text 358 6 pd for libpd;
+#X text 365 21 chris penny;
+#X obj 170 118 counter2;
+#X text 41 63 Simple - left is down \, right is up \, center is reset
+to 0;
+#X floatatom 170 146 5 0 0 0 - - -;
+#X connect 3 0 5 0;
